@@ -1,0 +1,652 @@
+parameters for AM coexistence:
+
+#######CASE 0: SP2 both mortalities increased ############################
+"[ 0] Maximum resource biomass                                RMAX  =   0.1     "	6.0
+"[ 1] Turn-over rates of resource                             DELTA =   1.0     "	1.0
+
+"[ 2] Mass of newborn consumer                                   SB =   z*SM    "	0.5E-5
+"[ 3] Mass of adult consumer                                     SM =   1.0E-4  "	1.0E-4
+
+"[ 4] Maximum ingestion rate species 1                          IMAX1 =   1.0    "    1.0
+"[ 5] Ratio adult/juvenile species 1 maximum ingestion rate     Q1 =      1.0     "	1.0
+"[ 6] Half-saturation constant species 1 functional response       H1 =   0.003   "	3.0
+"[ 7] Maintenance rate species 1                                   T1 =   0.1i    "    0.1
+
+"[ 8] Assimilation efficiency of species 1 juveniles          SIGMA1_J =   0.5   "	0.5
+"[ 9] Assimilation efficiency of species 1 adults             SIGMA1_A =   0.5   "	0.5
+
+"[10] Mortality rate of species 1 juvenile consumers                      MUJ1 =   0.015   "	0.015
+"[11] Mortality rate of species 1 adult consumers                         MUA1 =   0.015   "	0.015
+
+"[12] Maximum ingestion rate species 2                          IMAX2 =   1.0    "    1.1
+"[13] Ratio adult/juvenile species 2 maximum ingestion rate        Q2 =   1.0     "	1.0
+"[14] Half-saturation constant species 2 functional response       H2 =   0.003   "	2.5
+"[15] Maintenance rate species 2                                   T2 =   0.1i    "    0.1
+
+"[16] Assimilation efficiency species 2 juveniles               SIGMA2_J =   0.5   "	0.5
+"[17] Assimilation efficiency species 2 adults                  SIGMA2_A =   0.5   "	0.5
+
+"[18] Mortality rate of species 2 juvenile consumers                      MUJ2 =   0.015   "	0.04
+"[19] Mortality rate of species 2 adult consumers                         MUA2 =   0.015   "	0.04
+
+#########################################################################
+
+
+######CASE 1: SP2 juvenile mortality increased ##################################
+
+
+"[ 0] Maximum resource biomass                                RMAX  =   0.1     "	6.0
+"[ 1] Turn-over rates of resource                             DELTA =   1.0     "	1.0
+
+"[ 2] Mass of newborn consumer                                   SB =   z*SM    "	0.5E-5
+"[ 3] Mass of adult consumer                                     SM =   1.0E-4  "	1.0E-4
+
+"[ 4] Maximum ingestion rate species 1                          IMAX1 =   1.0    "    1.0
+"[ 5] Ratio adult/juvenile species 1 maximum ingestion rate     Q1 =      1.0     "	1.0
+"[ 6] Half-saturation constant species 1 functional response       H1 =   0.003   "	3.0
+"[ 7] Maintenance rate species 1                                   T1 =   0.1i    "    0.1
+
+"[ 8] Assimilation efficiency of species 1 juveniles          SIGMA1_J =   0.5   "	0.5
+"[ 9] Assimilation efficiency of species 1 adults             SIGMA1_A =   0.5   "	0.5
+
+"[10] Mortality rate of species 1 juvenile consumers                      MUJ1 =   0.015   "	0.015
+"[11] Mortality rate of species 1 adult consumers                         MUA1 =   0.015   "	0.015
+
+"[12] Maximum ingestion rate species 2                          IMAX2 =   1.0    "    1.1
+"[13] Ratio adult/juvenile species 2 maximum ingestion rate        Q2 =   1.0     "	1.0
+"[14] Half-saturation constant species 2 functional response       H2 =   0.003   "	2.5
+"[15] Maintenance rate species 2                                   T2 =   0.1i    "    0.1
+
+"[16] Assimilation efficiency species 2 juveniles               SIGMA2_J =   0.5   "	0.5
+"[17] Assimilation efficiency species 2 adults                  SIGMA2_A =   0.5   "	0.5
+
+"[18] Mortality rate of species 2 juvenile consumers                      MUJ2 =   0.015   "	0.051
+"[19] Mortality rate of species 2 adult consumers                         MUA2 =   0.015   "	0.015
+
+
+
+###################################################################################
+
+###################CASE2: SP1 juvenile growth decreased.   SP2 adult mortality increased.
+
+"[ 0] Maximum resource biomass                                RMAX  =   0.1     "	6.0
+"[ 1] Turn-over rates of resource                             DELTA =   1.0     "	1.0
+
+"[ 2] Mass of newborn consumer                                   SB =   z*SM    "	0.5E-5
+"[ 3] Mass of adult consumer                                     SM =   1.0E-4  "	1.0E-4
+
+"[ 4] Maximum ingestion rate species 1                          IMAX1 =   1.0    "    1.0
+"[ 5] Ratio adult/juvenile species 1 maximum ingestion rate     Q1 =      1.0     "	1.0
+"[ 6] Half-saturation constant species 1 functional response       H1 =   0.003   "	3.0
+"[ 7] Maintenance rate species 1                                   T1 =   0.1i    "    0.1
+
+"[ 8] Assimilation efficiency of species 1 juveniles          SIGMA1_J =   0.5   "	0.4
+"[ 9] Assimilation efficiency of species 1 adults             SIGMA1_A =   0.5   "	0.5
+
+"[10] Mortality rate of species 1 juvenile consumers                      MUJ1 =   0.015   "	0.015
+"[11] Mortality rate of species 1 adult consumers                         MUA1 =   0.015   "	0.015
+
+"[12] Maximum ingestion rate species 2                          IMAX2 =   1.0    "    1.1
+"[13] Ratio adult/juvenile species 2 maximum ingestion rate        Q2 =   1.0     "	1.0
+"[14] Half-saturation constant species 2 functional response       H2 =   0.003   "	2.5
+"[15] Maintenance rate species 2                                   T2 =   0.1i    "    0.1
+
+"[16] Assimilation efficiency species 2 juveniles               SIGMA2_J =   0.5   "	0.5
+"[17] Assimilation efficiency species 2 adults                  SIGMA2_A =   0.5   "	0.5
+
+"[18] Mortality rate of species 2 juvenile consumers                      MUJ2 =   0.015   "	0.015
+"[19] Mortality rate of species 2 adult consumers                         MUA2 =   0.015   "	1.0
+
+
+#######################################################################################################
+
+#######CASE3:  SP1 reproduction decreased.  SP2 mortality of both juveniles and adults increased
+
+"[ 0] Maximum resource biomass                                RMAX  =   0.1     "	6.0
+"[ 1] Turn-over rates of resource                             DELTA =   1.0     "	1.0
+
+"[ 2] Mass of newborn consumer                                   SB =   z*SM    "	0.5E-5
+"[ 3] Mass of adult consumer                                     SM =   1.0E-4  "	1.0E-4
+
+"[ 4] Maximum ingestion rate species 1                          IMAX1 =   1.0    "    1.0
+"[ 5] Ratio adult/juvenile species 1 maximum ingestion rate     Q1 =      1.0     "	1.0
+"[ 6] Half-saturation constant species 1 functional response       H1 =   0.003   "	3.0
+"[ 7] Maintenance rate species 1                                   T1 =   0.1i    "    0.1
+
+"[ 8] Assimilation efficiency of species 1 juveniles          SIGMA1_J =   0.5   "	0.5
+"[ 9] Assimilation efficiency of species 1 adults             SIGMA1_A =   0.5   "	0.33
+
+"[10] Mortality rate of species 1 juvenile consumers                      MUJ1 =   0.015   "	0.015
+"[11] Mortality rate of species 1 adult consumers                         MUA1 =   0.015   "	0.015
+
+"[12] Maximum ingestion rate species 2                          IMAX2 =   1.0    "    1.1
+"[13] Ratio adult/juvenile species 2 maximum ingestion rate        Q2 =   1.0     "	1.0
+"[14] Half-saturation constant species 2 functional response       H2 =   0.003   "	2.5
+"[15] Maintenance rate species 2                                   T2 =   0.1i    "    0.1
+
+"[16] Assimilation efficiency species 2 juveniles               SIGMA2_J =   0.5   "	0.5
+"[17] Assimilation efficiency species 2 adults                  SIGMA2_A =   0.5   "	0.5
+
+"[18] Mortality rate of species 2 juvenile consumers                      MUJ2 =   0.015   "	0.06
+"[19] Mortality rate of species 2 adult consumers                         MUA2 =   0.015   "	0.06
+
+############################################################################################################
+
+###########CASE4: SP1 decreased reproduction SP2 increased adult mortality
+
+"[ 0] Maximum resource biomass                                RMAX  =   0.1     "	6.0
+"[ 1] Turn-over rates of resource                             DELTA =   1.0     "	1.0
+
+"[ 2] Mass of newborn consumer                                   SB =   z*SM    "	0.5E-5
+"[ 3] Mass of adult consumer                                     SM =   1.0E-4  "	1.0E-4
+
+"[ 4] Maximum ingestion rate species 1                          IMAX1 =   1.0    "    1.0
+"[ 5] Ratio adult/juvenile species 1 maximum ingestion rate     Q1 =      1.0     "	1.0
+"[ 6] Half-saturation constant species 1 functional response       H1 =   0.003   "	3.0
+"[ 7] Maintenance rate species 1                                   T1 =   0.1i    "    0.1
+
+"[ 8] Assimilation efficiency of species 1 juveniles          SIGMA1_J =   0.5   "	0.5
+"[ 9] Assimilation efficiency of species 1 adults             SIGMA1_A =   0.5   "	0.33
+
+"[10] Mortality rate of species 1 juvenile consumers                      MUJ1 =   0.015   "	0.015
+"[11] Mortality rate of species 1 adult consumers                         MUA1 =   0.015   "	0.015
+
+"[12] Maximum ingestion rate species 2                          IMAX2 =   1.0    "    1.1
+"[13] Ratio adult/juvenile species 2 maximum ingestion rate        Q2 =   1.0     "	1.0
+"[14] Half-saturation constant species 2 functional response       H2 =   0.003   "	2.5
+"[15] Maintenance rate species 2                                   T2 =   0.1i    "    0.1
+
+"[16] Assimilation efficiency species 2 juveniles               SIGMA2_J =   0.5   "	0.5
+"[17] Assimilation efficiency species 2 adults                  SIGMA2_A =   0.5   "	0.5
+
+"[18] Mortality rate of species 2 juvenile consumers                      MUJ2 =   0.015   "	0.015
+"[19] Mortality rate of species 2 adult consumers                         MUA2 =   0.015   "	0.8
+
+###########################################################################################################
+
+############CASE5:  SP1 decreased reproduction SP2 increased juvenile mortality
+
+"[ 0] Maximum resource biomass                                RMAX  =   0.1     "	6.0
+"[ 1] Turn-over rates of resource                             DELTA =   1.0     "	1.0
+
+"[ 2] Mass of newborn consumer                                   SB =   z*SM    "	0.5E-5
+"[ 3] Mass of adult consumer                                     SM =   1.0E-4  "	1.0E-4
+
+"[ 4] Maximum ingestion rate species 1                          IMAX1 =   1.0    "    1.0
+"[ 5] Ratio adult/juvenile species 1 maximum ingestion rate     Q1 =      1.0     "	1.0
+"[ 6] Half-saturation constant species 1 functional response       H1 =   0.003   "	3.0
+"[ 7] Maintenance rate species 1                                   T1 =   0.1i    "    0.1
+
+"[ 8] Assimilation efficiency of species 1 juveniles          SIGMA1_J =   0.5   "	0.5
+"[ 9] Assimilation efficiency of species 1 adults             SIGMA1_A =   0.5   "	0.33
+
+"[10] Mortality rate of species 1 juvenile consumers                      MUJ1 =   0.015   "	0.015
+"[11] Mortality rate of species 1 adult consumers                         MUA1 =   0.015   "	0.015
+
+"[12] Maximum ingestion rate species 2                          IMAX2 =   1.0    "    1.1
+"[13] Ratio adult/juvenile species 2 maximum ingestion rate        Q2 =   1.0     "	1.0
+"[14] Half-saturation constant species 2 functional response       H2 =   0.003   "	2.5
+"[15] Maintenance rate species 2                                   T2 =   0.1i    "    0.1
+
+"[16] Assimilation efficiency species 2 juveniles               SIGMA2_J =   0.5   "	0.5
+"[17] Assimilation efficiency species 2 adults                  SIGMA2_A =   0.5   "	0.5
+
+"[18] Mortality rate of species 2 juvenile consumers                      MUJ2 =   0.015   "	0.09
+"[19] Mortality rate of species 2 adult consumers                         MUA2 =   0.015   "	0.015
+
+###########################################################################################################
+
+##########CASE6: SP1 juvenile growth decreased SP2 juvenile death increased
+
+"[ 0] Maximum resource biomass                                RMAX  =   0.1     "	6.0
+"[ 1] Turn-over rates of resource                             DELTA =   1.0     "	1.0
+
+"[ 2] Mass of newborn consumer                                   SB =   z*SM    "	0.5E-5
+"[ 3] Mass of adult consumer                                     SM =   1.0E-4  "	1.0E-4
+
+"[ 4] Maximum ingestion rate species 1                          IMAX1 =   1.0    "    1.0
+"[ 5] Ratio adult/juvenile species 1 maximum ingestion rate     Q1 =      1.0     "	1.0
+"[ 6] Half-saturation constant species 1 functional response       H1 =   0.003   "	3.0
+"[ 7] Maintenance rate species 1                                   T1 =   0.1i    "    0.1
+
+"[ 8] Assimilation efficiency of species 1 juveniles          SIGMA1_J =   0.5   "	0.4
+"[ 9] Assimilation efficiency of species 1 adults             SIGMA1_A =   0.5   "	0.5
+
+"[10] Mortality rate of species 1 juvenile consumers                      MUJ1 =   0.015   "	0.015
+"[11] Mortality rate of species 1 adult consumers                         MUA1 =   0.015   "	0.015
+
+"[12] Maximum ingestion rate species 2                          IMAX2 =   1.0    "    1.1
+"[13] Ratio adult/juvenile species 2 maximum ingestion rate        Q2 =   1.0     "	1.0
+"[14] Half-saturation constant species 2 functional response       H2 =   0.003   "	2.5
+"[15] Maintenance rate species 2                                   T2 =   0.1i    "    0.1
+
+"[16] Assimilation efficiency species 2 juveniles               SIGMA2_J =   0.5   "	0.5
+"[17] Assimilation efficiency species 2 adults                  SIGMA2_A =   0.5   "	0.5
+
+"[18] Mortality rate of species 2 juvenile consumers                      MUJ2 =   0.015   "	0.1
+"[19] Mortality rate of species 2 adult consumers                         MUA2 =   0.015   "	0.015
+
+############################################################################################################
+
+############CASE7: SP1 juvenile growth decreased SP2 both juvenile and adult death increased
+
+"[ 0] Maximum resource biomass                                RMAX  =   0.1     "	6.0
+"[ 1] Turn-over rates of resource                             DELTA =   1.0     "	1.0
+
+"[ 2] Mass of newborn consumer                                   SB =   z*SM    "	0.5E-5
+"[ 3] Mass of adult consumer                                     SM =   1.0E-4  "	1.0E-4
+
+"[ 4] Maximum ingestion rate species 1                          IMAX1 =   1.0    "    1.0
+"[ 5] Ratio adult/juvenile species 1 maximum ingestion rate     Q1 =      1.0     "	1.0
+"[ 6] Half-saturation constant species 1 functional response       H1 =   0.003   "	3.0
+"[ 7] Maintenance rate species 1                                   T1 =   0.1i    "    0.1
+
+"[ 8] Assimilation efficiency of species 1 juveniles          SIGMA1_J =   0.5   "	0.4
+"[ 9] Assimilation efficiency of species 1 adults             SIGMA1_A =   0.5   "	0.5
+
+"[10] Mortality rate of species 1 juvenile consumers                      MUJ1 =   0.015   "	0.015
+"[11] Mortality rate of species 1 adult consumers                         MUA1 =   0.015   "	0.015
+
+"[12] Maximum ingestion rate species 2                          IMAX2 =   1.0    "    1.1
+"[13] Ratio adult/juvenile species 2 maximum ingestion rate        Q2 =   1.0     "	1.0
+"[14] Half-saturation constant species 2 functional response       H2 =   0.003   "	2.5
+"[15] Maintenance rate species 2                                   T2 =   0.1i    "    0.1
+
+"[16] Assimilation efficiency species 2 juveniles               SIGMA2_J =   0.5   "	0.5
+"[17] Assimilation efficiency species 2 adults                  SIGMA2_A =   0.5   "	0.5
+
+"[18] Mortality rate of species 2 juvenile consumers                      MUJ2 =   0.015   "	0.068
+"[19] Mortality rate of species 2 adult consumers                         MUA2 =   0.015   "	0.068
+
+###########################################################################################################
+
+
+
+#############Non-AM coexistence chemostat
+
+############CASE8: SP1 adult reproduction decreased SP2 adult death increased
+
+"[ 0] Maximum resource biomass                                RMAX  =   0.1     "	100.0
+"[ 1] Turn-over rates of resource                             DELTA =   1.0     "	0.1
+
+"[ 2] Mass of newborn consumer                                   SB =   z*SM    "	0.5E-5
+"[ 3] Mass of adult consumer                                     SM =   1.0E-4  "	1.0E-4
+
+"[ 4] Maximum ingestion rate species 1                          IMAX1 =   1.0    "    1.0
+"[ 5] Ratio adult/juvenile species 1 maximum ingestion rate     Q1 =      1.0     "	1.0
+"[ 6] Half-saturation constant species 1 functional response       H1 =   0.003   "	3.0
+"[ 7] Maintenance rate species 1                                   T1 =   0.1i    "    0.1
+
+"[ 8] Assimilation efficiency of species 1 juveniles          SIGMA1_J =   0.5   "	0.5
+"[ 9] Assimilation efficiency of species 1 adults             SIGMA1_A =   0.5   "	0.3
+
+"[10] Mortality rate of species 1 juvenile consumers                      MUJ1 =   0.015   "	0.015
+"[11] Mortality rate of species 1 adult consumers                         MUA1 =   0.015   "	0.015
+
+"[12] Maximum ingestion rate species 2                          IMAX2 =   1.0    "    1.1
+"[13] Ratio adult/juvenile species 2 maximum ingestion rate        Q2 =   1.0     "	1.0
+"[14] Half-saturation constant species 2 functional response       H2 =   0.003   "	3.0
+"[15] Maintenance rate species 2                                   T2 =   0.1i    "    0.1
+
+"[16] Assimilation efficiency species 2 juveniles               SIGMA2_J =   0.5   "	0.5
+"[17] Assimilation efficiency species 2 adults                  SIGMA2_A =   0.5   "	0.5
+
+"[18] Mortality rate of species 2 juvenile consumers                      MUJ2 =   0.015   "	0.015
+"[19] Mortality rate of species 2 adult consumers                         MUA2 =   0.015   "	0.5
+
+###########################################################################################################
+
+
+
+#####################CASE 9 - hybrid SS/CR
+
+"[ 0] Maximum resource biomass                                RMAX  =   0.1     "	6.0
+"[ 1] Turn-over rates of resource                             DELTA =   1.0     "	1.0
+
+"[ 2] Mass of newborn consumer                                   SB =   z*SM    "	0.5E-5
+"[ 3] Mass of adult consumer                                     SM =   1.0E-4  "	1.0E-4
+
+"[ 4] Maximum ingestion rate species 1                          IMAX1 =   1.0    "    1.0
+"[ 5] Ratio adult/juvenile species 1 maximum ingestion rate     Q1 =      1.0     "	1.0
+"[ 6] Half-saturation constant species 1 functional response       H1 =   0.003   "	3.0
+"[ 7] Maintenance rate species 1                                   T1 =   0.1i    "    0.1
+
+"[ 8] Assimilation efficiency of species 1 juveniles          SIGMA1_J =   0.5   "	0.5
+"[ 9] Assimilation efficiency of species 1 adults             SIGMA1_A =   0.5   "	0.28
+
+"[10] Mortality rate of species 1 juvenile consumers                      MUJ1 =   0.015   "	0.015
+"[11] Mortality rate of species 1 adult consumers                         MUA1 =   0.015   "	0.015
+
+"[12] Maximum ingestion rate species 2                          IMAX2 =   1.0    "    1.0
+"[13] Ratio adult/juvenile species 2 maximum ingestion rate        Q2 =   1.0     "	1.0
+"[14] Half-saturation constant species 2 functional response       H2 =   0.003   "	3.0
+"[15] Maintenance rate species 2                                   T2 =   0.1i    "    0.1
+
+"[16] Assimilation efficiency species 2 juveniles               SIGMA2_J =   0.5   "	0.5
+"[17] Assimilation efficiency species 2 adults                  SIGMA2_A =   0.5   "	0.5
+
+"[18] Mortality rate of species 2 juvenile consumers                      MUJ2 =   0.015   "	0.015
+"[19] Mortality rate of species 2 adult consumers                         MUA2 =   0.015   "	0.55
+
+###############################################################################
+
+
+#########CASE 10:  sp2 decreased juvenile conversion #################################
+
+"[ 0] Maximum resource biomass                                RMAX  =   0.1     "	6.0
+"[ 1] Turn-over rates of resource                             DELTA =   1.0     "	1.0
+
+"[ 2] Mass of newborn consumer                                   SB =   z*SM    "	0.5E-5
+"[ 3] Mass of adult consumer                                     SM =   1.0E-4  "	1.0E-4
+
+"[ 4] Maximum ingestion rate species 1                          IMAX1 =   1.0    "    1.0
+"[ 5] Ratio adult/juvenile species 1 maximum ingestion rate     Q1 =      1.0     "	1.0
+"[ 6] Half-saturation constant species 1 functional response       H1 =   0.003   "	3.0
+"[ 7] Maintenance rate species 1                                   T1 =   0.1i    "    0.1
+
+"[ 8] Assimilation efficiency of species 1 juveniles          SIGMA1_J =   0.5   "	0.5
+"[ 9] Assimilation efficiency of species 1 adults             SIGMA1_A =   0.5   "	0.5
+
+"[10] Mortality rate of species 1 juvenile consumers                      MUJ1 =   0.015   "	0.015
+"[11] Mortality rate of species 1 adult consumers                         MUA1 =   0.015   "	0.015
+
+"[12] Maximum ingestion rate species 2                          IMAX2 =   1.0    "    1.1
+"[13] Ratio adult/juvenile species 2 maximum ingestion rate        Q2 =   1.0     "	1.0
+"[14] Half-saturation constant species 2 functional response       H2 =   0.003   "	2.5
+"[15] Maintenance rate species 2                                   T2 =   0.1i    "    0.1
+
+"[16] Assimilation efficiency species 2 juveniles               SIGMA2_J =   0.5   "	0.38
+"[17] Assimilation efficiency species 2 adults                  SIGMA2_A =   0.5   "	0.5
+
+"[18] Mortality rate of species 2 juvenile consumers                      MUJ2 =   0.015   "	0.015
+"[19] Mortality rate of species 2 adult consumers                         MUA2 =   0.015   "	0.015
+
+
+############################################################################################################
+
+###############CASE 11: sp 1 reproduction down sp 2 growth down ############################################
+
+"[ 0] Maximum resource biomass                                RMAX  =   0.1     "	6.0
+"[ 1] Turn-over rates of resource                             DELTA =   1.0     "	1.0
+
+"[ 2] Mass of newborn consumer                                   SB =   z*SM    "	0.5E-5
+"[ 3] Mass of adult consumer                                     SM =   1.0E-4  "	1.0E-4
+
+"[ 4] Maximum ingestion rate species 1                          IMAX1 =   1.0    "    1.0
+"[ 5] Ratio adult/juvenile species 1 maximum ingestion rate     Q1 =      1.0     "	1.0
+"[ 6] Half-saturation constant species 1 functional response       H1 =   0.003   "	3.0
+"[ 7] Maintenance rate species 1                                   T1 =   0.1i    "    0.1
+
+"[ 8] Assimilation efficiency of species 1 juveniles          SIGMA1_J =   0.5   "	0.5
+"[ 9] Assimilation efficiency of species 1 adults             SIGMA1_A =   0.5   "	0.3
+
+"[10] Mortality rate of species 1 juvenile consumers                      MUJ1 =   0.015   "	0.015
+"[11] Mortality rate of species 1 adult consumers                         MUA1 =   0.015   "	0.015
+
+"[12] Maximum ingestion rate species 2                          IMAX2 =   1.0    "    1.1
+"[13] Ratio adult/juvenile species 2 maximum ingestion rate        Q2 =   1.0     "	1.0
+"[14] Half-saturation constant species 2 functional response       H2 =   0.003   "	2.5
+"[15] Maintenance rate species 2                                   T2 =   0.1i    "    0.1
+
+"[16] Assimilation efficiency species 2 juveniles               SIGMA2_J =   0.5   "	0.31
+"[17] Assimilation efficiency species 2 adults                  SIGMA2_A =   0.5   "	0.5
+
+"[18] Mortality rate of species 2 juvenile consumers                      MUJ2 =   0.015   "	0.015
+"[19] Mortality rate of species 2 adult consumers                         MUA2 =   0.015   "	0.015
+
+############################################################################################################
+
+
+############CASE 12:  cohort cycle coexistence in logistic ###################################################
+"[ 0] Maximum resource biomass                                RMAX  =   0.1     "	3.0
+"[ 1] Turn-over rates of resource                             DELTA =   1.0     "	1.0
+
+"[ 2] Mass of newborn consumer                                   SB =   z*SM    "	0.5E-5
+"[ 3] Mass of adult consumer                                     SM =   1.0E-4  "	1.0E-4
+
+"[ 4] Maximum ingestion rate species 1                          IMAX1 =   1.0    "    1.0
+"[ 5] Ratio adult/juvenile species 1 maximum ingestion rate     Q1 =      1.0     "	1.0
+"[ 6] Half-saturation constant species 1 functional response       H1 =   0.003   "	3.0
+"[ 7] Maintenance rate species 1                                   T1 =   0.1i    "    0.1
+
+"[ 8] Assimilation efficiency of species 1 juveniles          SIGMA1_J =   0.5   "	0.5
+"[ 9] Assimilation efficiency of species 1 adults             SIGMA1_A =   0.5   "	0.35
+
+"[10] Mortality rate of species 1 juvenile consumers                      MUJ1 =   0.015   "	0.015
+"[11] Mortality rate of species 1 adult consumers                         MUA1 =   0.015   "	0.015
+
+"[12] Maximum ingestion rate species 2                          IMAX2 =   1.0    "    1.1
+"[13] Ratio adult/juvenile species 2 maximum ingestion rate        Q2 =   1.0     "	1.0
+"[14] Half-saturation constant species 2 functional response       H2 =   0.003   "	2.5
+"[15] Maintenance rate species 2                                   T2 =   0.1i    "    0.1
+
+"[16] Assimilation efficiency species 2 juveniles               SIGMA2_J =   0.5   "	0.5
+"[17] Assimilation efficiency species 2 adults                  SIGMA2_A =   0.5   "	0.5
+
+"[18] Mortality rate of species 2 juvenile consumers                      MUJ2 =   0.015   "	0.015
+"[19] Mortality rate of species 2 adult consumers                         MUA2 =   0.015   "	0.8
+#########################################################################################################
+
+
+#############CASE 13: cohort cycle coexistence logistic same FR ########################################
+"[ 0] Maximum resource biomass                                RMAX  =   0.1     "	3.0
+"[ 1] Turn-over rates of resource                             DELTA =   1.0     "	1.0
+
+"[ 2] Mass of newborn consumer                                   SB =   z*SM    "	0.5E-5
+"[ 3] Mass of adult consumer                                     SM =   1.0E-4  "	1.0E-4
+
+"[ 4] Maximum ingestion rate species 1                          IMAX1 =   1.0    "    1.0
+"[ 5] Ratio adult/juvenile species 1 maximum ingestion rate     Q1 =      1.0     "	1.0
+"[ 6] Half-saturation constant species 1 functional response       H1 =   0.003   "	3.0
+"[ 7] Maintenance rate species 1                                   T1 =   0.1i    "    0.1
+
+"[ 8] Assimilation efficiency of species 1 juveniles          SIGMA1_J =   0.5   "	0.5
+"[ 9] Assimilation efficiency of species 1 adults             SIGMA1_A =   0.5   "	0.35
+
+"[10] Mortality rate of species 1 juvenile consumers                      MUJ1 =   0.015   "	0.015
+"[11] Mortality rate of species 1 adult consumers                         MUA1 =   0.015   "	0.015
+
+"[12] Maximum ingestion rate species 2                          IMAX2 =   1.0    "    1.0
+"[13] Ratio adult/juvenile species 2 maximum ingestion rate        Q2 =   1.0     "	1.0
+"[14] Half-saturation constant species 2 functional response       H2 =   0.003   "	3.0
+"[15] Maintenance rate species 2                                   T2 =   0.1i    "    0.1
+
+"[16] Assimilation efficiency species 2 juveniles               SIGMA2_J =   0.5   "	0.5
+"[17] Assimilation efficiency species 2 adults                  SIGMA2_A =   0.5   "	0.5
+
+"[18] Mortality rate of species 2 juvenile consumers                      MUJ2 =   0.015   "	0.015
+"[19] Mortality rate of species 2 adult consumers                         MUA2 =   0.015   "	0.25
+#########################################################################################################
+
+
+#############CASE 14: hybrid SS/CR coexistence logistic dif FR same asymmetric life histories ############
+"[ 0] Maximum resource biomass                                RMAX  =   0.1     "	4.9
+"[ 1] Turn-over rates of resource                             DELTA =   1.0     "	1.0
+
+"[ 2] Mass of newborn consumer                                   SB =   z*SM    "	0.5E-5
+"[ 3] Mass of adult consumer                                     SM =   1.0E-4  "	1.0E-4
+
+"[ 4] Maximum ingestion rate species 1                          IMAX1 =   1.0    "    1.0
+"[ 5] Ratio adult/juvenile species 1 maximum ingestion rate     Q1 =      1.0     "	1.0
+"[ 6] Half-saturation constant species 1 functional response       H1 =   0.003   "	3.0
+"[ 7] Maintenance rate species 1                                   T1 =   0.1i    "    0.1
+
+"[ 8] Assimilation efficiency of species 1 juveniles          SIGMA1_J =   0.5   "	0.5
+"[ 9] Assimilation efficiency of species 1 adults             SIGMA1_A =   0.5   "	0.3
+
+"[10] Mortality rate of species 1 juvenile consumers                      MUJ1 =   0.015   "	0.015
+"[11] Mortality rate of species 1 adult consumers                         MUA1 =   0.015   "	0.015
+
+"[12] Maximum ingestion rate species 2                          IMAX2 =   1.0    "    1.1
+"[13] Ratio adult/juvenile species 2 maximum ingestion rate        Q2 =   1.0     "	1.0
+"[14] Half-saturation constant species 2 functional response       H2 =   0.003   "	2.5
+"[15] Maintenance rate species 2                                   T2 =   0.1i    "    0.1
+
+"[16] Assimilation efficiency species 2 juveniles               SIGMA2_J =   0.5   "	0.5
+"[17] Assimilation efficiency species 2 adults                  SIGMA2_A =   0.5   "	0.3
+
+"[18] Mortality rate of species 2 juvenile consumers                      MUJ2 =   0.015   "	0.051
+"[19] Mortality rate of species 2 adult consumers                         MUA2 =   0.015   "	0.051
+############################################################################################################
+
+
+#############CASE 15: variant of 14, but bigger LH asymmetry ##############################################
+"[ 0] Maximum resource biomass                                RMAX  =   0.1     "	8.0
+"[ 1] Turn-over rates of resource                             DELTA =   1.0     "	1.0
+
+"[ 2] Mass of newborn consumer                                   SB =   z*SM    "	0.5E-5
+"[ 3] Mass of adult consumer                                     SM =   1.0E-4  "	1.0E-4
+
+"[ 4] Maximum ingestion rate species 1                          IMAX1 =   1.0    "    1.0
+"[ 5] Ratio adult/juvenile species 1 maximum ingestion rate     Q1 =      1.0     "	1.0
+"[ 6] Half-saturation constant species 1 functional response       H1 =   0.003   "	3.0
+"[ 7] Maintenance rate species 1                                   T1 =   0.1i    "    0.1
+
+"[ 8] Assimilation efficiency of species 1 juveniles          SIGMA1_J =   0.5   "	0.5
+"[ 9] Assimilation efficiency of species 1 adults             SIGMA1_A =   0.5   "	0.2
+
+"[10] Mortality rate of species 1 juvenile consumers                      MUJ1 =   0.015   "	0.015
+"[11] Mortality rate of species 1 adult consumers                         MUA1 =   0.015   "	0.015
+
+"[12] Maximum ingestion rate species 2                          IMAX2 =   1.0    "    1.1
+"[13] Ratio adult/juvenile species 2 maximum ingestion rate        Q2 =   1.0     "	1.0
+"[14] Half-saturation constant species 2 functional response       H2 =   0.003   "	2.5
+"[15] Maintenance rate species 2                                   T2 =   0.1i    "    0.1
+
+"[16] Assimilation efficiency species 2 juveniles               SIGMA2_J =   0.5   "	0.5
+"[17] Assimilation efficiency species 2 adults                  SIGMA2_A =   0.5   "	0.2
+
+"[18] Mortality rate of species 2 juvenile consumers                      MUJ2 =   0.015   "	0.051
+"[19] Mortality rate of species 2 adult consumers                         MUA2 =   0.015   "	0.051
+############################################################################################################
+K: 7.3 - 9.0.
+
+
+###############CASE 16: continued idea, but with decreased juvenile growth #################################
+"[ 0] Maximum resource biomass                                RMAX  =   0.1     "	9.9
+"[ 1] Turn-over rates of resource                             DELTA =   1.0     "	1.0
+
+"[ 2] Mass of newborn consumer                                   SB =   z*SM    "	0.5E-5
+"[ 3] Mass of adult consumer                                     SM =   1.0E-4  "	1.0E-4
+
+"[ 4] Maximum ingestion rate species 1                          IMAX1 =   1.0    "    1.0
+"[ 5] Ratio adult/juvenile species 1 maximum ingestion rate     Q1 =      1.0     "	1.0
+"[ 6] Half-saturation constant species 1 functional response       H1 =   0.003   "	3.0
+"[ 7] Maintenance rate species 1                                   T1 =   0.1i    "    0.1
+
+"[ 8] Assimilation efficiency of species 1 juveniles          SIGMA1_J =   0.5   "	0.2
+"[ 9] Assimilation efficiency of species 1 adults             SIGMA1_A =   0.5   "	0.5
+
+"[10] Mortality rate of species 1 juvenile consumers                      MUJ1 =   0.015   "	0.015
+"[11] Mortality rate of species 1 adult consumers                         MUA1 =   0.015   "	0.015
+
+"[12] Maximum ingestion rate species 2                          IMAX2 =   1.0    "    1.1
+"[13] Ratio adult/juvenile species 2 maximum ingestion rate        Q2 =   1.0     "	1.0
+"[14] Half-saturation constant species 2 functional response       H2 =   0.003   "	2.5
+"[15] Maintenance rate species 2                                   T2 =   0.1i    "    0.1
+
+"[16] Assimilation efficiency species 2 juveniles               SIGMA2_J =   0.5   "	0.2
+"[17] Assimilation efficiency species 2 adults                  SIGMA2_A =   0.5   "	0.5
+
+"[18] Mortality rate of species 2 juvenile consumers                      MUJ2 =   0.015   "	0.04
+"[19] Mortality rate of species 2 adult consumers                         MUA2 =   0.015   "	0.04
+#########################################################################################################
+#gives hybrid CR ADult driven cycles. K: 9.8 - 10.0? for reverse situation (flipping adult and juvenile conversions) K: 8.6 - 9.3.
+Original (symmetric) K: 6.0 - 6.4 (6.5?)
+
+
+###############CASE 17: continued idea, but with decreased reprod growth #################################
+"[ 0] Maximum resource biomass                                RMAX  =   0.1     "	9.0
+"[ 1] Turn-over rates of resource                             DELTA =   1.0     "	1.0
+
+"[ 2] Mass of newborn consumer                                   SB =   z*SM    "	0.5E-5
+"[ 3] Mass of adult consumer                                     SM =   1.0E-4  "	1.0E-4
+
+"[ 4] Maximum ingestion rate species 1                          IMAX1 =   1.0    "    1.0
+"[ 5] Ratio adult/juvenile species 1 maximum ingestion rate     Q1 =      1.0     "	1.0
+"[ 6] Half-saturation constant species 1 functional response       H1 =   0.003   "	3.0
+"[ 7] Maintenance rate species 1                                   T1 =   0.1i    "    0.1
+
+"[ 8] Assimilation efficiency of species 1 juveniles          SIGMA1_J =   0.5   "	0.5
+"[ 9] Assimilation efficiency of species 1 adults             SIGMA1_A =   0.5   "	0.2
+
+"[10] Mortality rate of species 1 juvenile consumers                      MUJ1 =   0.015   "	0.015
+"[11] Mortality rate of species 1 adult consumers                         MUA1 =   0.015   "	0.015
+
+"[12] Maximum ingestion rate species 2                          IMAX2 =   1.0    "    1.1
+"[13] Ratio adult/juvenile species 2 maximum ingestion rate        Q2 =   1.0     "	1.0
+"[14] Half-saturation constant species 2 functional response       H2 =   0.003   "	2.5
+"[15] Maintenance rate species 2                                   T2 =   0.1i    "    0.1
+
+"[16] Assimilation efficiency species 2 juveniles               SIGMA2_J =   0.5   "	0.5
+"[17] Assimilation efficiency species 2 adults                  SIGMA2_A =   0.5   "	0.2
+
+"[18] Mortality rate of species 2 juvenile consumers                      MUJ2 =   0.015   "	0.04
+"[19] Mortality rate of species 2 adult consumers                         MUA2 =   0.015   "	0.04
+#########################################################################################################
+
+
+
+###############CASE 18: continued idea, increased sp 2 mortality #################################
+"[ 0] Maximum resource biomass                                RMAX  =   0.1     "	9.0
+"[ 1] Turn-over rates of resource                             DELTA =   1.0     "	1.0
+
+"[ 2] Mass of newborn consumer                                   SB =   z*SM    "	0.5E-5
+"[ 3] Mass of adult consumer                                     SM =   1.0E-4  "	1.0E-4
+
+"[ 4] Maximum ingestion rate species 1                          IMAX1 =   1.0    "    1.0
+"[ 5] Ratio adult/juvenile species 1 maximum ingestion rate     Q1 =      1.0     "	1.0
+"[ 6] Half-saturation constant species 1 functional response       H1 =   0.003   "	3.0
+"[ 7] Maintenance rate species 1                                   T1 =   0.1i    "    0.1
+
+"[ 8] Assimilation efficiency of species 1 juveniles          SIGMA1_J =   0.5   "	0.5
+"[ 9] Assimilation efficiency of species 1 adults             SIGMA1_A =   0.5   "	0.2
+
+"[10] Mortality rate of species 1 juvenile consumers                      MUJ1 =   0.015   "	0.015
+"[11] Mortality rate of species 1 adult consumers                         MUA1 =   0.015   "	0.015
+
+"[12] Maximum ingestion rate species 2                          IMAX2 =   1.0    "    1.1
+"[13] Ratio adult/juvenile species 2 maximum ingestion rate        Q2 =   1.0     "	1.0
+"[14] Half-saturation constant species 2 functional response       H2 =   0.003   "	2.5
+"[15] Maintenance rate species 2                                   T2 =   0.1i    "    0.1
+
+"[16] Assimilation efficiency species 2 juveniles               SIGMA2_J =   0.5   "	0.5
+"[17] Assimilation efficiency species 2 adults                  SIGMA2_A =   0.5   "	0.2
+
+"[18] Mortality rate of species 2 juvenile consumers                      MUJ2 =   0.015   "	0.05
+"[19] Mortality rate of species 2 adult consumers                         MUA2 =   0.015   "	0.05
+#########################################################################################################
+
+
+#######CASE 19: same as case 0, but increased sp 2 mortality ############################
+"[ 0] Maximum resource biomass                                RMAX  =   0.1     "	6.0
+"[ 1] Turn-over rates of resource                             DELTA =   1.0     "	1.0
+
+"[ 2] Mass of newborn consumer                                   SB =   z*SM    "	0.5E-5
+"[ 3] Mass of adult consumer                                     SM =   1.0E-4  "	1.0E-4
+
+"[ 4] Maximum ingestion rate species 1                          IMAX1 =   1.0    "    1.0
+"[ 5] Ratio adult/juvenile species 1 maximum ingestion rate     Q1 =      1.0     "	1.0
+"[ 6] Half-saturation constant species 1 functional response       H1 =   0.003   "	3.0
+"[ 7] Maintenance rate species 1                                   T1 =   0.1i    "    0.1
+
+"[ 8] Assimilation efficiency of species 1 juveniles          SIGMA1_J =   0.5   "	0.2
+"[ 9] Assimilation efficiency of species 1 adults             SIGMA1_A =   0.5   "	0.5
+
+"[10] Mortality rate of species 1 juvenile consumers                      MUJ1 =   0.015   "	0.015
+"[11] Mortality rate of species 1 adult consumers                         MUA1 =   0.015   "	0.015
+
+"[12] Maximum ingestion rate species 2                          IMAX2 =   1.0    "    1.1
+"[13] Ratio adult/juvenile species 2 maximum ingestion rate        Q2 =   1.0     "	1.0
+"[14] Half-saturation constant species 2 functional response       H2 =   0.003   "	2.5
+"[15] Maintenance rate species 2                                   T2 =   0.1i    "    0.1
+
+"[16] Assimilation efficiency species 2 juveniles               SIGMA2_J =   0.5   "	0.2
+"[17] Assimilation efficiency species 2 adults                  SIGMA2_A =   0.5   "	0.5
+
+"[18] Mortality rate of species 2 juvenile consumers                      MUJ2 =   0.015   "	0.05
+"[19] Mortality rate of species 2 adult consumers                         MUA2 =   0.015   "	0.05
+
+#########################################################################
+
+

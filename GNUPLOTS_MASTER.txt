@@ -1,0 +1,640 @@
+#####FIGURE 1 ############
+
+#####PANEL A: SPECIES 1 ALONE ODE############
+reset
+set terminal qt size 1400,700 font ',20'
+set multiplot layout 2,4
+set tmargin at screen 0.85
+#set rmargin 0.05
+set label 'Unstructured population' at screen 0.25,0.95 center front
+set label 'A' center at 75,6.3
+set title 'Species 1 alone'
+unset key
+set border lw 1.2
+set tics no mirror
+set yrange[0:6]
+set xrange[0:80]
+set size ratio 6/80
+set xlabel 'Days'
+set ylabel 'Biomass (mg)'
+plot "CASE0_sp1_alone.dat" u 1:2 w l lw 2 lc rgb "black", \
+"CASE0_sp1_alone.dat" u 1:3 w l lw 2 lc rgb "blue"
+
+#########################
+
+######PANEL B: SPECIES 2 ALONE ODE###########
+
+unset key
+unset label
+set label 'B' center at 75,5.3
+set title 'Species 2 alone'
+set yrange[0:5]
+set xrange[0:80]
+set size ratio 5/80
+set xlabel 'Days'
+set ylabel 'Biomass (mg)'
+plot "CASE0_sp2_alone.dat" u 1:2 w l lw 2 lc rgb "black", \
+"CASE0_sp2_alone.dat" u 1:4 w l lw 2 lc rgb "red"
+
+#########################
+
+#####PANEL E Species 1 alone PDE############
+unset key
+unset label
+set label 'Stage structured population' at screen 0.75,0.95 center front
+set label 'E' center at 5065,6.3
+set title 'Species 1 alone'
+set yrange[0:6]
+set xrange[4990:5070]
+set size ratio 6/80
+set xlabel 'Days'
+set ylabel 'Biomass (mg)'
+set xtics ("0" 4990,"10" 5000,"20" 5010,"30" 5020,"40" 5030,"50" 5040,"60" 5050, \
+"70" 5060,"80" 5070)
+plot "CASE0_PDE_sp1.out" u 1:2 w l lw 2 lc rgb "black", \
+"CASE0_PDE_sp1.out" u 1:3 w l lw 2 lc rgb "blue" lt "dashed", \
+"CASE0_PDE_sp1.out" u 1:5 w l lw 2 lc rgb "blue"
+
+
+#########################
+
+######PANEL F Species 2 alone PDE###########
+unset key
+unset label
+set label 'F' center at 5065,5.3
+set title 'Species 2 alone'
+set yrange[0:5]
+set xrange[4990:5070]
+set size ratio 5/80
+set xlabel 'Days'
+set ylabel 'Biomass (mg)'
+set xtics ("0" 4990,"10" 5000,"20" 5010,"30" 5020,"40" 5030,"50" 5040,"60" 5050, \
+"70" 5060,"80" 5070)
+plot "CASE0_PDE_sp2.out" u 1:2 w l lw 2 lc rgb "black", \
+"CASE0_PDE_sp2.out" u 1:4 w l lw 2 lc rgb "red" lt "dashed", \
+"CASE0_PDE_sp2.out" u 1:6 w l lw 2 lc rgb "red"
+
+
+#########################
+
+######PANEL C: INVASION FITNESS ###########
+
+unset key
+unset label
+unset tmargin
+#set tmargin at screen 0.4
+set label 'C' center at 3.8,0.22
+set title 'Invasion fitness'
+set yrange[-0.2:0.2]
+set xrange[0:4]
+#set size ratio 0.4/4
+set xlabel 'Resource Biomass (mg)'
+set ylabel 'Invasion fitness (day -^1)'
+set xtics ("0" 0,"1" 1,"2" 2,"3" 3,"4" 4)
+set arrow 1 from 0,0 to 4,0 nohead lt 'dashed' lw 2 lc "black"
+plot "CASE0.dat" u 1:2 smooth bezier lw 2 lc rgb "blue", \
+"CASE0.dat" u 1:3 smooth bezier lw 2 lc rgb "red"
+
+#########################
+
+######PANEL D: COEXISTENCE ###########
+unset key
+unset label
+set label 'D' center at 75,5.3
+set title 'Coexistence'
+set yrange[0:5]
+set xrange[0:80]
+set size ratio 5/80
+set xlabel 'Days'
+set ylabel 'Biomass (mg)'
+set xtics ("0" 0,"10" 10,"20" 20,"30" 30,"40" 40,"50" 50,"60" 60, \
+"70" 70,"80" 80)
+plot "CASE0_coex.dat" u 1:2 w l lw 2 lc rgb "black", \
+"CASE0_coex.dat" u 1:3 w l lw 2 lc rgb "blue", \
+"CASE0_coex.dat" u 1:4 w l lw 2 lc rgb "red"
+
+########################
+
+######PANEL G Invasion Fitness###########
+unset key
+unset label
+set label 'G' center at 3.8,0.011
+set title 'Invasion fitness'
+set yrange[-0.01:0.01]
+set xrange[0:4]
+set size ratio 0.02/4
+set xlabel 'Resource Biomass (mg)'
+set ylabel 'Invasion fitness (day -^1)'
+set xtics ("0" 0,"1" 1,"2" 2,"3" 3,"4" 4)
+set arrow 1 from 0,0 to 4,0 nohead lt 'dashed' lw 2 lc "black"
+plot "CASE0_PDE.dat" u 1:2 smooth bezier lw 2 lc rgb "blue", \
+"CASE0_PDE.dat" u 1:3 smooth bezier lw 2 lc rgb "red"
+
+#########################
+
+######PANEL H Coexistence###########
+unset key
+unset label
+set label 'H' center at 5070,5.3
+set title 'Coexistence'
+set yrange[0:5]
+set xrange[4995:5075]
+set size ratio 5/80
+set xlabel 'Days'
+set ylabel 'Biomass (mg)'
+set xtics ("0" 4995,"10" 5005,"20" 5015,"30" 5025,"40" 5035,"50" 5045,"60" 5055, \
+"70" 5065,"80" 5075)
+plot "CASE0_PDE_sp12.out" u 1:2 w l lw 2 lc rgb "black", \
+"CASE0_PDE_sp12.out" u 1:3 w l lw 2 lc rgb "blue" lt "dashed", \
+"CASE0_PDE_sp12.out" u 1:4 w l lw 2 lc rgb "red" lt "dashed", \
+"CASE0_PDE_sp12.out" u 1:5 w l lw 2 lc rgb "blue", \
+"CASE0_PDE_sp12.out" u 1:6 w l lw 2 lc rgb "red"
+unset multiplot
+########################
+######################################################
+
+
+###################FIGURE 2: K BIFURCATIONS ASYMMETRIES ########
+##########PANEL A: CASE17 UNSTRUCTURED W/ K###########
+reset
+set terminal qt size 700,700 font ',20'
+set title "Juvenile biomass conversion\n>\nadult biomass conversion"
+set multiplot layout 2,2
+set tmargin 5
+set rmargin 5
+unset key
+set label 'A' center at 9.7,5.2
+set yrange[0:5]
+set xrange[3:10]
+set size square
+#set size ratio 5/7
+set xlabel 'Resource carrying capacity (K)'
+set ylabel "Unstructured population\n\nBiomass (mg)"
+plot "sbcm_2sp_bif.avgCASE17UN_D.out" u 9:2 w l lc rgb "black" lw 2,\
+"sbcm_2sp_bif.avgCASE17UN_D.out" u 9:7 w l lc rgb "blue" lw 2,\
+"sbcm_2sp_bif.avgCASE17UN_U.out" u 9:2 w l lc rgb "black" lw 2,\
+"sbcm_2sp_bif.avgCASE17UN_U.out" u 9:7 w l lc rgb "blue" lw 2,\
+"sbcm_2sp_bif.minmaxCASE17UN_D.out" u 9:2 every 2::::100 w l lc rgb "black" lw 2,\
+"sbcm_2sp_bif.minmaxCASE17UN_D.out" u 9:7 every 2::::100 w l lc rgb "blue" lw 2,\
+"sbcm_2sp_bif.minmaxCASE17UN_D.out" u 9:2 every 2::1::100 w l lc rgb "black" lw 2,\
+"sbcm_2sp_bif.minmaxCASE17UN_D.out" u 9:7 every 2::1::100 w l lc rgb "blue" lw 2,\
+"sbcm_2sp_bif.minmaxCASE17UN_U.out" u 9:2 every 2::::100 w l lc rgb "black" lw 2,\
+"sbcm_2sp_bif.minmaxCASE17UN_U.out" u 9:7 every 2::::100 w l lc rgb "blue" lw 2,\
+"sbcm_2sp_bif.minmaxCASE17UN_U.out" u 9:2 every 2::1::100 w l lc rgb "black" lw 2,\
+"sbcm_2sp_bif.minmaxCASE17UN_U.out" u 9:7 every 2::1::100 w l lc rgb "blue" lw 2
+#############################
+
+
+##########PANEL C: CASE16 UNSTRUCTURED W/ K###########
+
+unset key
+set title "Adult biomass conversion\n>\njuvenile biomass conversion"
+unset label
+set label 'C' center at 6.93,7.3
+set yrange[0:7]
+set xrange[5.5:7.0]
+set xtics (5.5,6.25,7.0)
+set size square
+#set size ratio 7.0/1.5
+#set xlabel 'Resource carrying capacity (K)' font ",20"
+set ylabel 'Biomass (mg)'
+plot "sbcm_2sp_bif.avgCASE0_D.out" u 9:2 w l lc rgb "black" lw 2,\
+"sbcm_2sp_bif.avgCASE0_D.out" u 9:7 w l lc rgb "blue" lw 2,\
+"sbcm_2sp_bif.avgCASE0_D.out" u 9:8 w l lc rgb "red" lw 2,\
+"sbcm_2sp_bif.avgCASE0_U.out" u 9:2 w l lc rgb "black" lw 2,\
+"sbcm_2sp_bif.avgCASE0_U.out" u 9:7 w l lc rgb "blue" lw 2,\
+"sbcm_2sp_bif.avgCASE0_U.out" u 9:8 w l lc rgb "red" lw 2,\
+"sbcm_2sp_bif.minmaxCASE0_D.out" u 9:2 every 2::::100 w l lc rgb "black" lw 2,\
+"sbcm_2sp_bif.minmaxCASE0_D.out" u 9:7 every 2::::100 w l lc rgb "blue" lw 2,\
+"sbcm_2sp_bif.minmaxCASE0_D.out" u 9:8 every 2::::100 w l lc rgb "red" lw 2,\
+"sbcm_2sp_bif.minmaxCASE0_D.out" u 9:2 every 2::1::100 w l lc rgb "black" lw 2,\
+"sbcm_2sp_bif.minmaxCASE0_D.out" u 9:7 every 2::1::100 w l lc rgb "blue" lw 2,\
+"sbcm_2sp_bif.minmaxCASE0_D.out" u 9:8 every 2::1::100 w l lc rgb "red" lw 2,\
+"sbcm_2sp_bif.minmaxCASE0_U.out" u 9:2 every 2::::100 w l lc rgb "black" lw 2,\
+"sbcm_2sp_bif.minmaxCASE0_U.out" u 9:7 every 2::::100 w l lc rgb "blue" lw 2,\
+"sbcm_2sp_bif.minmaxCASE0_U.out" u 9:8 every 2::::100 w l lc rgb "red" lw 2,\
+"sbcm_2sp_bif.minmaxCASE0_U.out" u 9:2 every 2::1::100 w l lc rgb "black" lw 2,\
+"sbcm_2sp_bif.minmaxCASE0_U.out" u 9:7 every 2::1::100 w l lc rgb "blue" lw 2,\
+"sbcm_2sp_bif.minmaxCASE0_U.out" u 9:8 every 2::1::100 w l lc rgb "red" lw 2
+#############################
+
+##########PANEL B: CASE17 STRUCTURED W/ K###########
+
+unset key
+unset title
+unset label
+#set tmargin at screen 0.5
+set label 'B' center at 9.75,9.3
+set yrange[0:9]
+set xrange[8:9.8]
+set xtics (8,9,9.8)
+set size square
+#set size ratio 9.0/1.8
+set ylabel "Stage structured population\n\nBiomass (mg)"
+plot "sbcm_2sp_bif.avgCASE17_D.out" u 9:2 w l lc rgb "black" lw 2,\
+"sbcm_2sp_bif.avgCASE17_D.out" u 9:7 w l lc rgb "blue" lw 2,\
+"sbcm_2sp_bif.avgCASE17_D.out" u 9:8 w l lc rgb "red" lw 2,\
+"sbcm_2sp_bif.avgCASE17_U.out" u 9:2 w l lc rgb "black" lw 2,\
+"sbcm_2sp_bif.avgCASE17_U.out" u 9:7 w l lc rgb "blue" lw 2,\
+"sbcm_2sp_bif.avgCASE17_U.out" u 9:8 w l lc rgb "red" lw 2,\
+"sbcm_2sp_bif.minmaxCASE17_D.out" u 9:2 every 2::::100 w l lc rgb "black" lw 2,\
+"sbcm_2sp_bif.minmaxCASE17_D.out" u 9:7 every 2::::100 w l lc rgb "blue" lw 2,\
+"sbcm_2sp_bif.minmaxCASE17_D.out" u 9:8 every 2::::100 w l lc rgb "red" lw 2,\
+"sbcm_2sp_bif.minmaxCASE17_D.out" u 9:2 every 2::1::100 w l lc rgb "black" lw 2,\
+"sbcm_2sp_bif.minmaxCASE17_D.out" u 9:7 every 2::1::100 w l lc rgb "blue" lw 2,\
+"sbcm_2sp_bif.minmaxCASE17_D.out" u 9:8 every 2::1::100 w l lc rgb "red" lw 2,\
+"sbcm_2sp_bif.minmaxCASE17_U.out" u 9:2 every 2::::100 w l lc rgb "black" lw 2,\
+"sbcm_2sp_bif.minmaxCASE17_U.out" u 9:7 every 2::::100 w l lc rgb "blue" lw 2,\
+"sbcm_2sp_bif.minmaxCASE17_U.out" u 9:8 every 2::::100 w l lc rgb "red" lw 2,\
+"sbcm_2sp_bif.minmaxCASE17_U.out" u 9:2 every 2::1::100 w l lc rgb "black" lw 2,\
+"sbcm_2sp_bif.minmaxCASE17_U.out" u 9:7 every 2::1::100 w l lc rgb "blue" lw 2,\
+"sbcm_2sp_bif.minmaxCASE17_U.out" u 9:8 every 2::1::100 w l lc rgb "red" lw 2
+#############################
+
+
+##########PANEL D: CASE16 STRUCTURED W/ K###########
+
+unset key
+unset title
+unset label
+set label 'D' center at 10.55,7.3
+set yrange[0:7]
+set xrange[9.4:10.6]
+set xtics (9.4,10.0,10.6)
+set size square
+#set size ratio 7.0/1.2
+set ylabel 'Biomass (mg)'
+plot "sbcm_2sp_bif.avgCASE16_D.out" u 9:2 w l lc rgb "black" lw 2,\
+"sbcm_2sp_bif.avgCASE16_D.out" u 9:7 w l lc rgb "blue" lw 2,\
+"sbcm_2sp_bif.avgCASE16_D.out" u 9:8 w l lc rgb "red" lw 2,\
+"sbcm_2sp_bif.avgCASE16_U.out" u 9:2 w l lc rgb "black" lw 2,\
+"sbcm_2sp_bif.avgCASE16_U.out" u 9:7 w l lc rgb "blue" lw 2,\
+"sbcm_2sp_bif.avgCASE16_U.out" u 9:8 w l lc rgb "red" lw 2,\
+"sbcm_2sp_bif.minmaxCASE16_D.out" u 9:2 every 2::::100 w l lc rgb "black" lw 2,\
+"sbcm_2sp_bif.minmaxCASE16_D.out" u 9:7 every 2::::100 w l lc rgb "blue" lw 2 ,\
+"sbcm_2sp_bif.minmaxCASE16_D.out" u 9:8 every 2::::100 w l lc rgb "red" lw 2,\
+"sbcm_2sp_bif.minmaxCASE16_D.out" u 9:2 every 2::1::100 w l lc rgb "black" lw 2,\
+"sbcm_2sp_bif.minmaxCASE16_D.out" u 9:7 every 2::1::100 w l lc rgb "blue" lw 2,\
+"sbcm_2sp_bif.minmaxCASE16_D.out" u 9:8 every 2::1::100 w l lc rgb "red" lw 2,\
+"sbcm_2sp_bif.minmaxCASE16_U.out" u 9:2 every 2::::100 w l lc rgb "black" lw 2,\
+"sbcm_2sp_bif.minmaxCASE16_U.out" u 9:7 every 2::::100 w l lc rgb "blue" lw 2,\
+"sbcm_2sp_bif.minmaxCASE16_U.out" u 9:8 every 2::::100 w l lc rgb "red" lw 2,\
+"sbcm_2sp_bif.minmaxCASE16_U.out" u 9:2 every 2::1::100 w l lc rgb "black" lw 2,\
+"sbcm_2sp_bif.minmaxCASE16_U.out" u 9:7 every 2::1::100 w l lc rgb "blue" lw 2,\
+"sbcm_2sp_bif.minmaxCASE16_U.out" u 9:8 every 2::1::100 w l lc rgb "red" lw 2
+
+#############################
+
+unset multiplot
+
+################################################################
+
+###################FIGURE 3: CASE 17v 16 #########################
+#####PANEL A ############
+reset
+set terminal qt size 1400,700 font ',20'
+set multiplot layout 2,4
+unset key
+set label 'Juvenile biomass conversion > Adult biomass conversion' at screen 0.25,0.95 center front
+set tmargin at screen 0.85
+set label 'A' center at 6995,6.3
+set size ratio 6/90
+set border lw 1.2
+set tics nomirror
+set xlabel 'Days'
+set ylabel 'Biomass (mg)'
+set title 'Species 1 Alone'
+#set yrange[-0.05:0.08]
+set xrange[6910:7000]
+set xtics ("0" 6910,"10" 6920,"20" 6930,"30" 6940,"40" 6950,"50" 6960,"60" 6970, \
+"70" 6980,"80" 6990,"90" 7000)
+plot "CASE17_sp1_alone.out" u 1:2 w l lw 2 lc rgb "black", \
+"CASE17_sp1_alone.out" u 1:3 w l lw 2 lc rgb "blue" lt "dashed", \
+"CASE17_sp1_alone.out" u 1:5 w l lw 2 lc rgb "blue"
+
+
+#########################
+
+######PANEL B ###########
+unset key
+unset label
+unset xtics
+set label 'B' center at 7015,8.34
+set border lw 1.2
+set tics nomirror
+#set size ratio 110/8
+set title 'Species 2 Alone'
+set xlabel 'Days'
+set ylabel 'Biomass (mg)'
+#set yrange[-0.05:0.08]
+set xrange[6910:7020]
+set xtics ("0" 6910,"20" 6930,"40" 6950,"60" 6970, \
+"80" 6990,"100" 7010)
+plot "CASE17_sp2_alone.out" u 1:2 w l lw 2 lc rgb "black", \
+"CASE17_sp2_alone.out" u 1:4 w l lw 2 lc rgb "red" lt "dashed", \
+"CASE17_sp2_alone.out" u 1:6 w l lw 2 lc rgb "red"
+
+
+#########################
+
+#####PANEL E CASE16############
+
+unset key
+unset label
+unset xtics
+set label 'Adult biomass conversion > Juvenile biomass conversion' at screen 0.75,0.95 center front
+set label 'E' center at 6650,4.8
+set border lw 1.2
+set tics nomirror
+#set size ratio 700/4.5
+set title 'Species 1 Alone'
+set xlabel 'Days'
+set ylabel 'Biomass (mg)'
+#set yrange[-0.05:0.08]
+set xrange[6000:6700]
+set xtics ("0" 6000,"200" 6200,"400" 6400,"600" 6600)
+plot "CASE16_sp1_alone.out" u 1:2 w l lw 2 lc rgb "black", \
+"CASE16_sp1_alone.out" u 1:3 w l lw 2 lc rgb "blue" lt "dashed", \
+"CASE16_sp1_alone.out" u 1:5 w l lw 2 lc rgb "blue"
+
+
+#########################
+
+######PANEL F CASE16###########
+unset key
+unset label
+unset xtics
+set label 'F' center at 9995,7.3
+set border lw 1.2
+set tics no mirror
+#set size ratio 110/7
+set title 'Species 2 Alone'
+set xlabel 'Days'
+set ylabel 'Biomass (mg)'
+#set yrange[-0.05:0.08]
+set xrange[9890:10000]
+set xtics ("0" 9890,"20" 9910,"40" 9930,"60" 9950, \
+"80" 9970,"100" 9990)
+plot "CASE16_sp2_alone.out" u 1:2 w l lw 2 lc rgb "black", \
+"CASE16_sp2_alone.out" u 1:4 w l lw 2 lc rgb "red" lt "dashed", \
+"CASE16_sp2_alone.out" u 1:6 w l lw 2 lc rgb "red"
+
+
+#########################
+
+
+######PANEL C ########### 
+unset key
+unset label
+unset xrange
+unset xtics
+unset tmargin
+set label 'C' center at 7.5,1.3
+set title 'Invasion fitness'
+set border lw 1.2
+set tics nomirror
+#set size ratio 1.4/8
+set ylabel 'Instantaneous fitness (day^-^1)'
+set xlab 'Resource biomass (mg)'
+#set yrange[-0.05:0.08]
+#set xrange[0.5:2]
+set arrow 1 from 0,0 to 8.0,0 nohead lt 'dashed' lw 2 lc "black"
+plot "CASE17_1DR.dat" u 1:2 smooth bezier lw 2 lc rgb "blue", \
+"CASE17_1UR.dat" u 1:2 smooth bezier lw 2 lc rgb "blue", \
+"CASE17_2DR.dat" u 1:2 smooth bezier lw 2 lc rgb "red", \
+"CASE17_2UR.dat" u 1:2 smooth bezier lw 2 lc rgb "red"
+
+#########################
+
+######PANEL D ###########
+unset key
+unset xtics
+unset label
+#set size ratio 110/8
+set label 'D' center at 7015,8.34
+set border lw 1.2
+set tics nomirror
+set title 'Coexistence'
+set xlabel 'Days'
+set ylabel 'Biomass (mg)'
+#set yrange[-0.05:0.08]
+set xrange[6910:7020]
+set xtics ("0" 6910,"20" 6930,"40" 6950,"60" 6970, \
+"80" 6990,"100" 7010)
+plot "CASE17_coex.out" u 1:2 w l lw 2 lc rgb "black", \
+"CASE17_coex.out" u 1:3 w l lw 2 lc rgb "blue" lt "dashed", \
+"CASE17_coex.out" u 1:4 w l lw 2 lc rgb "red" lt "dashed", \
+"CASE17_coex.out" u 1:5 w l lw 2 lc rgb "blue", \
+"CASE17_coex.out" u 1:6 w l lw 2 lc rgb "red"
+########################
+######################################################
+
+
+######PANEL G CASE16###########
+unset key
+unset label
+unset xrange
+unset xtics
+#set size ratio 0.45/7
+set label 'G' center at 6.5,0.028
+set title 'Invasion fitness'
+set border lw 1.2
+set tics nomirror
+set ylabel 'Instantaneous fitness (day^-^1)'
+set xlab 'Resource biomass (mg)'
+#set yrange[-0.05:0.08]
+#set xrange[0.5:2]
+set arrow 1 from 0,0 to 7,0 nohead lt 'dashed' lw 2 lc "black"
+plot "CASE16_1DR.dat" u 1:2 smooth bezier lw 2 lc rgb "blue", \
+"CASE16_1UR.dat" u 1:2 smooth bezier lw 2 lc rgb "blue", \
+"CASE16_2DR.dat" u 1:2 smooth bezier lw 2 lc rgb "red", \
+"CASE16_2UR.dat" u 1:2 smooth bezier lw 2 lc rgb "red"
+
+
+#########################
+
+######PANEL H CASE16 ###########
+unset key
+unset label
+unset xtics
+#set size ratio 110/6
+set label 'H' center at 9995,6.3
+set border lw 1.2
+set tics nomirror
+set title 'Coexistence'
+set xlabel 'Days'
+set ylabel 'Biomass (mg)'
+#set yrange[-0.05:0.08]
+set xrange[9890:10000]
+set xtics ("0" 9890,"20" 9910,"40" 9930,"60" 9950, \
+"80" 9970,"100" 9990) 
+plot "CASE16_coex.out" u 1:2 w l lw 2 lc rgb "black", \
+"CASE16_coex.out" u 1:3 w l lw 2 lc rgb "blue" lt "dashed", \
+"CASE16_coex.out" u 1:4 w l lw 2 lc rgb "red" lt "dashed", \
+"CASE16_coex.out" u 1:5 w l lw 2 lc rgb "blue", \
+"CASE16_coex.out" u 1:6 w l lw 2 lc rgb "red"
+########################
+######################################################
+unset multiplot
+
+
+
+
+###################FIGURE 4: CASE 13 #########################
+#####PANEL A ############
+reset
+set terminal qt size 800,800 font ',20'
+unset key
+set title 'Species 1 alone'
+set multiplot layout 2,2
+set size square
+set label 'A' center at 9985,2.6
+set xlabel 'Days'
+set ylabel 'Biomass (mg)'
+set border lw 1.2
+set tics nomirror
+#set yrange[-0.05:0.08]
+set xrange[9675:10000] 
+set xtics ("0" 9675,"60" 9735,"120" 9795,"180" 9855, \
+"240" 9915,"300" 9975) 
+plot "CASE13_sp1.out" u 1:2 w l lw 2 lc rgb "black", \
+"CASE13_sp1.out" u 1:3 w l lw 2 lc rgb "blue" lt "dashed", \
+"CASE13_sp1.out" u 1:5 w l lw 2 lc rgb "blue"
+
+
+#########################
+
+######PANEL B ###########
+unset key
+unset label
+set xlabel 'Days'
+set ylabel 'Biomass (mg)'
+set title 'Species 2 alone'
+set label 'B' center at 9985,3.1
+set border lw 1.2
+set tics nomirror
+#set yrange[-0.05:0.08]
+set xrange[9675:10000] 
+set xtics ("0" 9675,"60" 9735,"120" 9795,"180" 9855, \
+"240" 9915,"300" 9975) 
+plot "CASE13_sp2.out" u 1:2 w l lw 2 lc rgb "black", \
+"CASE13_sp2.out" u 1:4 w l lw 2 lc rgb "red" lt "dashed", \
+"CASE13_sp2.out" u 1:6 w l lw 2 lc rgb "red"
+
+
+#########################
+
+######PANEL C ###########
+unset key
+unset label
+unset xrange
+unset xtics
+set title 'Invasion fitness'
+set xlabel 'Resource Biomass (mg)'
+set ylabel 'Instantaneous fitness (days^-^1)'
+set label 'C' center at 1.65,0.125
+set border lw 1.2
+set tics nomirror
+set xrange[0.8:1.7]
+set xtics ("0.8" 0.8, "1.2" 1.2,"1.6" 1.6)
+set arrow 1 from 0.8,0 to 1.7,0 nohead lt 'dashed' lw 2 lc "black"
+plot "CASE13_1DR.dat" u 1:2 smooth bezier lw 2 lc rgb "blue", \
+"CASE13_1UR.dat" u 1:2 smooth bezier lw 2 lc rgb "blue", \
+"CASE13_2DR.dat" u 1:2 smooth bezier lw 2 lc rgb "red", \
+"CASE13_2UR.dat" u 1:2 smooth bezier lw 2 lc rgb "red"
+
+#########################
+
+######PANEL D ###########
+unset key
+unset label
+set label 'D' center at 9960,2.6
+set xlabel 'Days'
+set ylabel 'Biomass (mg)'
+set title 'Coexistence'
+set border lw 1.2
+set tics nomirror 
+#set yrange[-0.05:0.08]
+set xrange[9675:9975] 
+set xtics ("0" 9675,"60" 9735,"120" 9795,"180" 9855, \
+"240" 9915,"300" 9975) 
+plot "CASE13_sp12.out" u 1:2 w l lw 2 lc rgb "black", \
+"CASE13_sp12.out" u 1:3 w l lw 2 lc rgb "blue" lt "dashed", \
+"CASE13_sp12.out" u 1:4 w l lw 2 lc rgb "red" lt "dashed", \
+"CASE13_sp12.out" u 1:5 w l lw 2 lc rgb "blue", \
+"CASE13_sp12.out" u 1:6 w l lw 2 lc rgb "red"
+########################
+######################################################
+unset multiplot
+
+###########FIGURE 7: CASE 13 K BIFURCATION ##################
+
+#########PANEL A ##############################
+
+reset
+set terminal qt size 800,800 font ',20'
+set multiplot layout 1,2
+set size ratio 9/7
+unset key
+set xrange[3:10]
+set yrange[0:9]
+set title "Unstructured population"
+set xlabel "Days"
+set ylabel "Biomass (mg)"
+set label 'A' center at 9.8,9.3
+plot "sbcm_2sp_bif.avg13UN_D.out" u 9:2 w l lc rgb "black" lw 2,\
+"sbcm_2sp_bif.avg13UN_D.out" u 9:7 w l lc rgb "blue" lw 2,\
+"sbcm_2sp_bif.avg13UN_D.out" u 9:8 w l lc rgb "red" lw 2,\
+"sbcm_2sp_bif.avg13UN_U.out" u 9:2 w l lc rgb "black" lw 2,\
+"sbcm_2sp_bif.avg13UN_U.out" u 9:7 w l lc rgb "blue" lw 2,\
+"sbcm_2sp_bif.avg13UN_U.out" u 9:8 w l lc rgb "red" lw 2,\
+"sbcm_2sp_bif.minmax13UN_D.out" u 9:2 every 2::::100 w l lc rgb "black" lw 2,\
+"sbcm_2sp_bif.minmax13UN_D.out" u 9:7 every 2::::100 w l lc rgb "blue" lw 2,\
+"sbcm_2sp_bif.minmax13UN_D.out" u 9:8 every 2::::100 w l lc rgb "red" lw 2,\
+"sbcm_2sp_bif.minmax13UN_D.out" u 9:2 every 2::1::100 w l lc rgb "black" lw 2,\
+"sbcm_2sp_bif.minmax13UN_D.out" u 9:7 every 2::1::100 w l lc rgb "blue" lw 2,\
+"sbcm_2sp_bif.minmax13UN_D.out" u 9:8 every 2::1::100 w l lc rgb "red" lw 2,\
+"sbcm_2sp_bif.minmax13UN_U.out" u 9:2 every 2::::100 w l lc rgb "black" lw 2,\
+"sbcm_2sp_bif.minmax13UN_U.out" u 9:7 every 2::::100 w l lc rgb "blue" lw 2,\
+"sbcm_2sp_bif.minmax13UN_U.out" u 9:8 every 2::::100 w l lc rgb "red" lw 2,\
+"sbcm_2sp_bif.minmax13UN_U.out" u 9:2 every 2::1::100 w l lc rgb "black" lw 2,\
+"sbcm_2sp_bif.minmax13UN_U.out" u 9:7 every 2::1::100 w l lc rgb "blue" lw 2,\
+"sbcm_2sp_bif.minmax13UN_U.out" u 9:8 every 2::1::100 w l lc rgb "red" lw 2
+
+#############################################################
+
+##########PANEL B ###########################################
+#reset
+#set terminal qt font ',20'
+unset key
+unset label
+set label 'B' center at 5.8,5.2
+set size ratio 5/5
+set xrange[1:6]
+set yrange[0:5]
+set xlabel "Days"
+set title "Stage structured population"
+plot "sbcm_2sp_bif.avg13D.out" u 9:2 w l lc rgb "black" lw 2,\
+"sbcm_2sp_bif.avg13D.out" u 9:7 w l lc rgb "blue" lw 2,\
+"sbcm_2sp_bif.avg13D.out" u 9:8 w l lc rgb "red" lw 2,\
+"sbcm_2sp_bif.avg13U.out" u 9:2 w l lc rgb "black" lw 2,\
+"sbcm_2sp_bif.avg13U.out" u 9:7 w l lc rgb "blue" lw 2,\
+"sbcm_2sp_bif.avg13U.out" u 9:8 w l lc rgb "red" lw 2,\
+"sbcm_2sp_bif.minmax13D.out" u 9:2 every 2::::100 w l lc rgb "black" lw 2,\
+"sbcm_2sp_bif.minmax13D.out" u 9:7 every 2::::100 w l lc rgb "blue" lw 2,\
+"sbcm_2sp_bif.minmax13D.out" u 9:8 every 2::::100 w l lc rgb "red" lw 2,\
+"sbcm_2sp_bif.minmax13D.out" u 9:2 every 2::1::100 w l lc rgb "black" lw 2,\
+"sbcm_2sp_bif.minmax13D.out" u 9:7 every 2::1::100 w l lc rgb "blue" lw 2,\
+"sbcm_2sp_bif.minmax13D.out" u 9:8 every 2::1::100 w l lc rgb "red" lw 2,\
+"sbcm_2sp_bif.minmax13U.out" u 9:2 every 2::::100 w l lc rgb "black" lw 2,\
+"sbcm_2sp_bif.minmax13U.out" u 9:7 every 2::::100 w l lc rgb "blue" lw 2,\
+"sbcm_2sp_bif.minmax13U.out" u 9:8 every 2::::100 w l lc rgb "red" lw 2,\
+"sbcm_2sp_bif.minmax13U.out" u 9:2 every 2::1::100 w l lc rgb "black" lw 2,\
+"sbcm_2sp_bif.minmax13U.out" u 9:7 every 2::1::100 w l lc rgb "blue" lw 2,\
+"sbcm_2sp_bif.minmax13U.out" u 9:8 every 2::1::100 w l lc rgb "red" lw 2
+
+unset multiplot
+
+#############################################################
+
+###############################################################################
